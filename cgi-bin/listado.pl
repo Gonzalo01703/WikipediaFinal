@@ -49,10 +49,25 @@ $dbh->disconnect;
 
 print <<HTML;
 <br>
-    <div class="columna cabecera">
-       <a href="nuevaPag.pl">Nueva pagina</a>
-       <a href="../inicio.html">Volver a inicio</a>
+
+    <div style="text-align: center;">
+        <!--
+            <a href="nuevaPag.pl">Nueva pagina</a>
+            <a href="../inicio.html">Volver a inicio</a>
+        -->
+        <input class="boton" type="submit" value="Crear Nueva Pagina" onclick = "location='nuevaPag.pl'"/>
+        <input class="boton" type="submit" value="Volver a Inicio" onclick = "location='../inicio.html'"/>
+         <br>
+         <br>
+        <img  src="http://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/500px-Wikipedia-logo-v2.svg.png" alt="img unsa" width="600px">
+
+
     </div>
+    <div class="imagenwiki">
+
+    </div>
+
+
 HTML
 
 

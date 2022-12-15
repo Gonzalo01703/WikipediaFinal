@@ -11,7 +11,7 @@ print <<HTML;
 <html>
 <head>
     
-    <link rel="stylesheet" type="text/css" href="../estilosPerl124.css">
+    <link rel="stylesheet" type="text/css" href="../estiloUni.css">
     <title>Actor id 5 </title>
 </head>
 <body>
@@ -43,6 +43,7 @@ HTML
 
 if(!defined $titulo && !defined $contenido){
     print <<HTML;
+    <div class="formulario">
     <form action="nuevaPag.pl">
         <p>Titulo</p>    
         <input type="text" name="titulo">
@@ -51,6 +52,7 @@ if(!defined $titulo && !defined $contenido){
         <input type="submit"><br>
         <a href="listado.pl">Cancelar</a>
     </form>
+    </div>
 HTML
 
 }

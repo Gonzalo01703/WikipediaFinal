@@ -1,0 +1,27 @@
+* { 
+    font-family: Times New Roman, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.titulo{
+    color: white;
+    font-size: 20px;
+    text-align: center ;
+    background-color: hsl(221, 59%, 48%);
+    padding: 1.5em;
+}
+.imagenwiki{
+    text-align: center;
+}
+.boton{
+    width :20%;
+    background: hsl(221, 59%, 48%);
+    border-radius: 10px;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0px;
+    font-size: 20px
+    
+    
+}

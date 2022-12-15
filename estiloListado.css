@@ -1,0 +1,26 @@
+* { 
+    font-family: Times New Roman, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(180, 178, 178);
+}
+
+.boton{
+    width :20%;
+    background: hsl(221, 59%, 48%);
+    border-radius: 10px;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0px;
+    font-size: 20px
+    
+    
+}   
+h1{
+    text-align: center ;
+    color: white;
+    font-size: 40px;
+    padding: 1em;
+    background-color: hsl(221, 59%, 48%);
+}
