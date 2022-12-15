@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
     <title>Wikipedia</title>
 </head>
 <body>
+
 
     <div class="titulo">
         <h1>Proyecto Final: Parte 1</h1>
@@ -14,13 +16,10 @@
         <p class="descripcion">
             En la primera parte se tiene que crear una pagina que cree otras paginas usando el lenguaje Markdown
         </p>
-        
-
-
     </div>
-   
 
-    <div class="links">
+    <div style="text-align: center;">
+        <!--
         <h2 class="linkLista">
             <a href="cgi-bin/listado.pl">Listado de las Paginas</a>
         </h2>
@@ -29,10 +28,22 @@
             <a href="cgi-bin/nuevaPag.pl">Crear Nueva Pagina</a>
         </h2>
 
+        -->
+        <input class="boton" type="submit" value="Listado de las Paginas" onclick = "location='cgi-bin/listado.pl'"/>
+        <input class="boton" type="submit" value="Crear Nueva Pagina" onclick = "location='cgi-bin/nuevaPag.pl'"/>
 
-        <a href="nuevo.html">Crear Nueva Paginaa111111111111111</a>
+
+       
 
     </div>
+
+
+    <div class="imagenwiki">
+        <img  src="http://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/500px-Wikipedia-logo-v2.svg.png" alt="img unsa" width="600px">
+
+    </div>
+
+    
 
 
     <div class="titulo">
