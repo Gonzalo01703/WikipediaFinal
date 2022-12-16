@@ -11,7 +11,7 @@ print <<HTML;
 <html>
 <head>
     
-    <link rel="stylesheet" type="text/css" href="../estiloListado.css">
+    <link rel="stylesheet" type="text/css" href="../estiloList.css">
     <title>Lista de Paginas</title>
 </head>
 <body>
@@ -37,7 +37,7 @@ while(my @row=$sth->fetchrow_array){
     
     print <<HTML;
     <form>
-        <li><a href="ver.pl?titulo=$row[0]">$row[0]</a><a href="editar.pl?titulo=$row[0]">E</a><a href="borrar.pl?titulo=$row[0]">X</a></li>
+        <li><a href="ver.pl?titulo=$row[0]">$row[0]</a><a href="editar.pl?titulo=$row[0]">  E  </a><a href="borrar.pl?titulo=$row[0]">  X  </a></li>
     </form>
 HTML
 
@@ -50,23 +50,23 @@ $dbh->disconnect;
 print <<HTML;
 <br>
 
-    <div style="text-align: center;">
+
+    <div style="text-align: center;" >
         <!--
             <a href="nuevaPag.pl">Nueva pagina</a>
             <a href="../inicio.html">Volver a inicio</a>
-        -->
+       -->
         <input class="boton" type="submit" value="Crear Nueva Pagina" onclick = "location='nuevaPag.pl'"/>
         <input class="boton" type="submit" value="Volver a Inicio" onclick = "location='../inicio.html'"/>
+
+        
          <br>
          <br>
         <img  src="http://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/500px-Wikipedia-logo-v2.svg.png" alt="img unsa" width="600px">
 
 
     </div>
-    <div class="imagenwiki">
-
-    </div>
-
+    
 
 HTML
 
